@@ -1,5 +1,5 @@
 import axios from "axios"
-const baseurl = "https://full-stack-open-3-0.vercel.app"
+const baseurl = "/api/persons"
 
 const getNumbers = () => {
   return axios.get(`${baseurl}/api/persons`)
