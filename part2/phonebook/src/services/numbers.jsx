@@ -1,14 +1,15 @@
 import axios from "axios"
-const baseurl = "http://localhost:3001/api/persons"
+const baseurl = "https://full-stack-open-3-0.vercel.app"
+
 const getNumbers = () => {
-  return axios.get(baseurl)
+  return axios.get(`${baseurl}/api/persons`)
 }
 
 const getName = (id) => {
-  return axios.get(`${baseurl}/${id}`)
+  return axios.get(`${baseurl}/api/persons/${id}`)
 }
 const sendNumbers = (object) => {
-  return axios.post(baseurl, object)
+  return axios.post(`${baseurl}/api/persons`, object)
 }
 
 const deleteNumbers = (id) => {
