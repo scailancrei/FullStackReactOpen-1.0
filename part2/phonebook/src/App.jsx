@@ -100,7 +100,7 @@ function App() {
       numbersService
         .deleteNumbers(id)
         .then((response) => {
-          console.log(response + ` element deleted`)
+          console.log(` element deleted`)
         })
         .catch((error) => {
           setServerMessage(
