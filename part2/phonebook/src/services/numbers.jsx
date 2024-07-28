@@ -2,14 +2,14 @@ import axios from "axios"
 const baseurl = "/api/persons"
 
 const getNumbers = () => {
-  return axios.get(`${baseurl}/api/persons`)
+  return axios.get(`${baseurl}`)
 }
 
 const getName = (id) => {
-  return axios.get(`${baseurl}/api/persons/${id}`)
+  return axios.get(`${baseurl}/${id}`)
 }
 const sendNumbers = (object) => {
-  return axios.post(`${baseurl}/api/persons`, object)
+  return axios.post(`${baseurl}`, object)
 }
 
 const deleteNumbers = (id) => {

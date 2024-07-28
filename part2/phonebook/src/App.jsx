@@ -19,6 +19,7 @@ function App() {
     numbersService
       .getNumbers()
       .then((response) => {
+        console.log(response)
         setPersons(response.data)
       })
       .catch((error) => {
