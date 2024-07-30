@@ -1,4 +1,5 @@
 const Form = ({
+  status,
   handleNewName,
   newName,
   handleSubmit,
@@ -18,12 +19,17 @@ const Form = ({
       <div>
         number: {""}
         <input
+          type="number"
           onChange={(e) => handleNewNumber(e.target.value)}
           value={newNumber}
         />
       </div>
       <div>
-        <button onClick={(e) => handleSubmit(e)} type="submit">
+        <button
+          disabled={status}
+          onClick={(e) => handleSubmit(e)}
+          type="submit"
+        >
           add
         </button>
       </div>
