@@ -19,7 +19,6 @@ const Form = ({
       <div>
         number: {""}
         <input
-          type="number"
           onChange={(e) => handleNewNumber(e.target.value)}
           value={newNumber}
         />
