@@ -62,6 +62,7 @@ function App() {
   }
 
   const saveData = (sendData) => {
+    console.log(sendData)
     numbersService
       .sendNumbers(sendData)
       .then((response) => {
@@ -77,7 +78,7 @@ function App() {
         }, 3000)
       })
       .catch((error) => {
-        console.log(error.request.status)
+        console.log(error)
         setText("bad")
         setStatus(true)
         setServerMessage(`${error.request.response}`)
